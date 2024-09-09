@@ -1,0 +1,176 @@
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(54, 54, 54);
+  color: white;
+  /* padding: 14px; */
+  min-height: 100vh;
+  display:flex;
+  flex-direction: column;
+  gap:14px;
+  font-family: sans-serif, 'Times New Roman', Times, serif;
+
+}
+
+header {
+  display: flex ;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px;
+}
+
+header section img {
+  max-width: 35px;
+  border-radius: 50%;
+  border: 2px solid cyan;
+}
+
+nav,
+section {
+  align-items: center;
+  display: flex;
+  gap: 14px;
+}
+
+.whiteLink {
+  color: white;
+}
+
+.greyLink {
+  color: rgb(165, 159, 159);
+}
+
+a {
+  text-decoration: unset;
+  font-size: 0.8em;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 0 14px;
+}
+
+.headerText {
+  font-size: 4em;
+  font-family: 'Times New Roman', Times, serif !important;
+  color: yellow;
+}
+
+.searchBar {
+  display: flex;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  gap: 14px;
+  border: 1px solid ;
+  padding: 14px;
+  border-radius: 24px;
+}
+
+.searchBar:hover {
+  border-color: transparent;
+  background-color: #4d4e4f;
+  cursor: pointer;
+}
+
+.iconButton {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.iconButtonContainer {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+}
+
+input {
+  background: transparent;
+  outline: none;
+  border: unset;
+  color: white;
+  flex: 1;
+}
+
+.searchButtonContainer button {
+  padding: 10px 14px;
+  border-radius: 4px;
+  background-color: rgb(107, 106, 106);
+  color: white;
+  border: 1px solid transparent;
+}
+
+.searchButtonContainer{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.searchButtonContainer button:hover {
+  border: 1px solid darkgray;
+  cursor: pointer;
+}
+
+.languageSelection {
+  font-size: 0.9em;
+}
+
+.languageSelection span {
+  color: rgb(91, 91, 195);
+  cursor: pointer;
+}
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+footer > section {
+  padding: 14px;
+  color: white;
+  background-color: rgb(53, 53, 53);
+}
+
+footer > section:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 1px solid darkgray;
+  color: white;
+  flex-direction: column;
+}
+
+.footerLink {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footerLink a {
+  cursor: pointer;
+}
+
+@media (min-width: 548px) {
+  footer > section:last-child {
+    flex-direction: row;
+  }
+}
